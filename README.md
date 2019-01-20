@@ -2,12 +2,13 @@
 # Note
 
 aspnetcore-middleware-security-buildout
-Evolving from aspnetcore-security-headers repo for learning. Mainly importing each file in one at a time into separate folder and sifting through, adding what I see fit and commenting for understanding.
+Evolving from aspnetcore-security-headers repo for learning. Mainly importing each file in one at a time into separate folder and sifting through, adding what I see fit and commenting for understanding (reference owasp). https://www.owasp.org/index.php/Category:Attack
 
 In most situations it is ideal to handle CSP, HSTS, X-XSS-Protection headers, and https redirects at the proxy server level.
 Will still build this out with commentation for learning purposes, but not at the top of my priority list anymore. It might be a good idea to include a header check in the middleware anyways in prod, just to be sure. I am mainly just adding commentation to these files that already exist in https://github.com/spencer741/aspnetcore-security-headers forked from https://github.com/juunas11/aspnetcore-security-headers
 
 
+TODO: add DDOS protection middleware, add xsrf prevention (using cookies with http-only)
 
 
 
